@@ -87,7 +87,7 @@ def CalcTCB():
                 NMRETCB.append(sublist)
             else:
                 TXRETCB.append(sublist)
-        elif ()
+        # elif ()
     print(count)
     print("CATETCB")
     for i in CATETCB:
@@ -120,4 +120,4 @@ def CalcTCB():
         print(str(i)+"")
     # print(REVNE)
 if __name__=="__main__":
-    CalcTCB()
+    main()
