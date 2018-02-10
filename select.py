@@ -10,13 +10,13 @@ csvFile = open("data/use_all_btu.csv", "r")
 reader = csv.reader(csvFile)  # 返回的是迭代类型
 data = []
 for line in reader:
-    if (line[1] == 'TX'):
+    if (line[1] == 'NM'):
         # print(line[2:])
         data.append(line[2:])
 csvFile.close()
 
 # 写入
-with open('data/tx.csv','w') as fout:
+with open('data/nm.csv','w') as fout:
     writer=csv.writer(fout)    
     for row in data:
         writer.writerows([row])

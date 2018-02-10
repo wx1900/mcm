@@ -1,4 +1,21 @@
-yreVA = reVA[0:49]
-yreVC = reVC[0:49]
-yreVI = reVI[0:49]
-yreVR = reVR[0:49]
+    writer.writerows([ycoalVT])
+    writer.writerows([ycoalVA])
+    writer.writerows([ycoalVC])
+    writer.writerows([ycoalVI])
+    writer.writerows([ycoalVR])
+    writer.writerows([yngVT])
+    writer.writerows([yngVA])
+    writer.writerows([yngVC])
+    writer.writerows([yngVI])
+    writer.writerows([yngVR])
+    writer.writerows([ypotVT])
+    writer.writerows([ypotVA])
+    writer.writerows([ypotVC])
+    writer.writerows([ypotVI])
+    writer.writerows([ypotVR])
+    writer.writerows([yreVT])
+    writer.writerows([yreVA])
+    writer.writerows([yreVC])
+    writer.writerows([yreVI])
+    writer.writerows([yreVR])
+    writer.writerows([ynuVT])

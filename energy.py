@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 # 计算物种主要能源消耗占总行业的比以及每种能源消耗在四个行业中的占比
 
-state = 'nm'
+state = 'ca'
 
 #　读取
 csvFile = open("data/"+state+".csv", "r")
@@ -616,42 +616,72 @@ yreVC = reVC[0:49]
 yreVI = reVI[0:49]
 yreVR = reVR[0:49]
 
-plt.scatter(x, ycoalVA, c='y', alpha=.7, label='Coal')
-plt.scatter(x, yngVA, c='r', alpha=.7, label='Natrual Gas')
-plt.scatter(x, ypotVA, c='g', alpha=.7, label='Petroleum')
-plt.scatter(x, yreVA, c='m', alpha=.7, label='Renewable Energy')
-art = []
-lgd = plt.legend(loc=9, bbox_to_anchor=(0.5,-0.1),ncol = 2)
-art.append(lgd)
-plt.savefig("fig/transportation_"+state+".png", additional_artists=art, bbox_inches = "tight")
-plt.close()
+# plt.scatter(x, ycoalVA, c='y', alpha=.7, label='Coal')
+# plt.scatter(x, yngVA, c='r', alpha=.7, label='Natrual Gas')
+# plt.scatter(x, ypotVA, c='g', alpha=.7, label='Petroleum')
+# plt.scatter(x, yreVA, c='m', alpha=.7, label='Renewable Energy')
+# art = []
+# lgd = plt.legend(loc=9, bbox_to_anchor=(0.5,-0.1),ncol = 2)
+# art.append(lgd)
+# plt.savefig("fig/transportation_"+state+".png", additional_artists=art, bbox_inches = "tight")
+# plt.close()
 
-plt.scatter(x, ycoalVC, c='y', alpha=.7, label='Coal')
-plt.scatter(x, yngVC, c='r', alpha=.7, label='Natrual Gas')
-plt.scatter(x, ypotVC, c='g', alpha=.7, label='Petroleum')
-plt.scatter(x, yreVC, c='m', alpha=.7, label='Renewable Energy')
-art = []
-lgd = plt.legend(loc=9, bbox_to_anchor=(0.5,-0.1),ncol = 2)
-art.append(lgd)
-plt.savefig("fig/commercial_"+state+".png", additional_artists=art, bbox_inches = "tight")
-plt.close()
+# plt.scatter(x, ycoalVC, c='y', alpha=.7, label='Coal')
+# plt.scatter(x, yngVC, c='r', alpha=.7, label='Natrual Gas')
+# plt.scatter(x, ypotVC, c='g', alpha=.7, label='Petroleum')
+# plt.scatter(x, yreVC, c='m', alpha=.7, label='Renewable Energy')
+# art = []
+# lgd = plt.legend(loc=9, bbox_to_anchor=(0.5,-0.1),ncol = 2)
+# art.append(lgd)
+# plt.savefig("fig/commercial_"+state+".png", additional_artists=art, bbox_inches = "tight")
+# plt.close()
 
-plt.scatter(x, ycoalVI, c='y', alpha=.7, label='Coal')
-plt.scatter(x, yngVI, c='r', alpha=.7, label='Natrual Gas')
-plt.scatter(x, ypotVI, c='g', alpha=.7, label='Petroleum')
-plt.scatter(x, yreVI, c='m', alpha=.7, label='Renewable Energy')
-art = []
-lgd = plt.legend(loc=9, bbox_to_anchor=(0.5,-0.1),ncol = 2)
-art.append(lgd)
-plt.savefig("fig/Industrial_"+state+".png", additional_artists=art, bbox_inches = "tight")
-plt.close()
+# plt.scatter(x, ycoalVI, c='y', alpha=.7, label='Coal')
+# plt.scatter(x, yngVI, c='r', alpha=.7, label='Natrual Gas')
+# plt.scatter(x, ypotVI, c='g', alpha=.7, label='Petroleum')
+# plt.scatter(x, yreVI, c='m', alpha=.7, label='Renewable Energy')
+# art = []
+# lgd = plt.legend(loc=9, bbox_to_anchor=(0.5,-0.1),ncol = 2)
+# art.append(lgd)
+# plt.savefig("fig/Industrial_"+state+".png", additional_artists=art, bbox_inches = "tight")
+# plt.close()
 
-plt.scatter(x, ycoalVR, c='y', alpha=.7, label='Coal')
-plt.scatter(x, yngVR, c='r', alpha=.7, label='Natrual Gas')
-plt.scatter(x, ypotVR, c='g', alpha=.7, label='Petroleum')
-plt.scatter(x, yreVR, c='m', alpha=.7, label='Renewable Energy')
-art = []
-lgd = plt.legend(loc=9, bbox_to_anchor=(0.5,-0.1),ncol = 2)
-art.append(lgd)
-plt.savefig("fig/Residential_"+state+".png", additional_artists=art, bbox_inches = "tight")
-plt.close()
+# plt.scatter(x, ycoalVR, c='y', alpha=.7, label='Coal')
+# plt.scatter(x, yngVR, c='r', alpha=.7, label='Natrual Gas')
+# plt.scatter(x, ypotVR, c='g', alpha=.7, label='Petroleum')
+# plt.scatter(x, yreVR, c='m', alpha=.7, label='Renewable Energy')
+# art = []
+# lgd = plt.legend(loc=9, bbox_to_anchor=(0.5,-0.1),ncol = 2)
+# art.append(lgd)
+# plt.savefig("fig/Residential_"+state+".png", additional_artists=art, bbox_inches = "tight")
+# plt.close()
+
+# 写入
+def save (state):
+    with open('data/energyprofile_'+state+'.csv','w') as fout:
+        writer=csv.writer(fout)    
+        writer.writerows([ycoalVT])
+        writer.writerows([ycoalVA])
+        writer.writerows([ycoalVC])
+        writer.writerows([ycoalVI])                                                                                                                         
+        writer.writerows([ycoalVR])                                                                                                 
+        writer.writerows([yngVT])                                                                                                                                                                                                                                                                                                                                                                                                                   
+        writer.writerows([yngVA])
+        writer.writerows([yngVC])
+        writer.writerows([yngVI])                                                                                   
+        writer.writerows([yngVR])
+        writer.writerows([ypotVT])
+        writer.writerows([ypotVA])                                                                                                                                                            
+        writer.writerows([ypotVC])
+        writer.writerows([ypotVI])
+        writer.writerows([ypotVR])
+        writer.writerows([yreVT])
+        writer.writerows([yreVA])
+        writer.writerows([yreVC])
+        writer.writerows([yreVI])
+        writer.writerows([yreVR])
+        writer.writerows([ynuVT])
+
+states = ['ca','az','nm','tx']
+for i in states:
+    save(i)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             

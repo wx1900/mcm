@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*- 
 import xdrlib ,sys
 import xlrd
+import csv
+import numpy as np
+import matplotlib.pyplot as plt
 
 #打开excel文件
 def open_excel(file= 'ProblemCData.xlsx'):
@@ -49,6 +52,17 @@ def main():
             # print(row[0])
             samecount = 0
         index += 1
+def gdp():
+    tables = excel_table_byname()
+    list = []
+    for i in tables:
+        if (i[0] == 'TPOPP'):
+            list.append(i[1:])
+            print(i)
+    with open('data/TPOPP.csv','w') as fout:
+        writer=csv.writer(fout)
+        for i in list:    
+            writer.writerows([i])
 
 def CalcTCB():
     tables = excel_table_byname()
@@ -119,5 +133,37 @@ def CalcTCB():
     for i in REVNE:
         print(str(i)+"")
     # print(REVNE)
+
+def save(state, var):
+    # state = 'ca'
+
+    #　读取
+    csvFile = open("data/"+state+".csv", "r")
+    reader = csv.reader(csvFile)  # 返回的是迭代类型
+    data = []
+    for line in reader:
+        data.append(line)
+    csvFile.close()
+    list = []
+    count = 1960
+    for i in data:
+        if (i[0] == var):
+            list.append(i[1:])
+
+    for i in range(0, len(list[0])):
+        print(list[0][i])
+        print(count)
+        count+=1     
+    # with open('data/'+state+'_'+var+'.csv','w') as fout:
+    #     writer=csv.writer(fout)    
+    #     writer.writerows(list)
+
 if __name__=="__main__":
-    main()
+    # main()
+    # state = ['ca','az','nm','tx']
+    # var = ['GDPRX', 'TPOPP']
+    # for i in state:
+    #     for j in var:
+    #         save(i, j)
+    # save('ca','GDPRX')
+    gdp()
