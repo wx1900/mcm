@@ -1,0 +1,121 @@
+%!TeX program = xelatex
+%!TeX builder = latexmk
+\documentclass{mcmthesis}
+\mcmsetup{tcn = 88277, problem = B}
+\usepackage{blindtext}      % 提供 \blindtext 命令，演示用
+
+\title{The Title}
+\author{Team 88277}
+\date{\today}
+
+\begin{document}
+% 摘要
+\begin{abstract}
+abstract content blablabla \\
+next line
+% 用 \\ 换行
+% 关键字
+\begin{keywords}
+keyword1; keyword2
+\end{keywords}
+
+\end{abstract}
+
+\maketitle                  % 生成前面的摘要页和标题页
+\tableofcontents
+% 介绍 Introduction
+\section{Introduction}
+instroduction content
+% section
+\section{Establishing Energy profile}
+Energy consumption is related to many factors, but the variability of the industrial structure is relatively large. The industrial structure and its changes are the main factors affecting the energy consumption. Therefore, it is of great practical significance to analyze the relationship between industrial structure and energy consumption. Taken together, we choose the total consumption and industrial structure to measure the energy consumption in a region.
+Our aim is to use the Energy profile to represent the total annual consumption of various energy sources and their structure. According to the official website of the data introduction and their own induction of energy. We divide energy into Coal, Natural Gas, Petroleum, Renewable Energy and Nuclear electric power.
+\subsection{Energy classification}
+The 605 variables has been classified into five main classes. Each class has some variables which listed in the memo page.
+\begin{itemize}
+    \item Coal\\
+    Recorded as coal
+    \item Natural Gas\\
+    Recorded as ng
+    \item Petroleum\\
+    Recorded as petro
+    \item Renewable Energy\\
+    Recorded as re
+    \item Nuclear electric power\\
+    Recorded as nu
+\end{itemize}
+\subsection{Introduce four kinds of departments}
+\begin{itemize}
+  \item Residential sector\\
+  An energy-consuming sector that consists of living quarters for private households.\\
+  We choose to use RCB (residential energy consumption, data in British thermal units (Btu)) to measure its energy consumption.
+  \item Commercial sector\\
+  An energy-consuming sector that consists of service-providing facilities and equipment of: businesses; federal, state, and local governments; and other private and public organizations. The commercial sector includes institutional living quarters. It also includes sewage treatment facilities.\\
+  We choose to use CCB (commercial energy consumption, data in British thermal units (Btu)) to measure its energy consumption.
+  \item Industrial sector\\
+  An energy-consuming sector that consists of all facilities and equipment used for producing, processing, or assembling goods.\\
+  We chose to use ICB (Industrial energy consumption, data in British thermal units (Btu)) to measure its energy consumption.
+  \item Transportation sector\\
+  An energy-consuming sector that consists of all vehicles whose primary purpose is transporting people and/or goods from one physical location to another.\\
+  We chose to use TCB(Transportation energy consumption, data in British thermal units (Btu)) to measure its energy consumption.
+\end{itemize}
+\subsection{Construct the formula and explain the calculation process}
+\subsubsection{Calculation of the total consumption of five types of energy}
+Filter out the annual consumption of all energy sources in each type of energy from the data and seek for accumulation.
+For example, Coal: CL, CC. The total consumption of coal in 2009 is CLTCB + CCTCB. \\
+Note the total consumption of five types of energy, respectively. Coal: coalTCB. Natural Gas: ngTCB. Petroleum: petroTCB. Renewable Energy: reTCB. Nuclear energy: nuTCB.
+\subsubsection{Calculate the consumption of five kinds of energy in four sectors separately}
+From the data, we choose the energy consumption of all energy sources in each sector and then add up according to the sector.
+  For example, Coal : CL, CC. Consumption of coal in the Residential sector in 2009 is: CLRCB + CCRCB; Consumption in the commercial sector is: CLCCB + CCCCB; Consumption in the Industrial sector is: CLICB + CCICB; Consumption in the Transportation sector is: CLACB + CLACB .\\
+Note the total consumption of five types of energy, respectively. Coal: coalRCB, coalCCB, coalICB, coalACB. Natural Gas: ngRCB, ngCCB, ngICB, ngACB. Petroleum: petroRCB, petroCCB, petroICB, petroACB. Renewable Energy: reRCB, reCCB, reICB, reACB. Nuclear energy has no industrial structure and no data.
+\subsection{Formula for energy profile}
+\[
+  EP =
+  \begin{pmatrix}
+  \frac{coalTCB}{TETCB} & \frac{coalACB}{TEACB} & \frac{coalCCB}{TECCB} & \frac{coalICB}{TEICB} & \frac{coalRCB}{TERCB}  \\
+  \frac{ngTCB}{TETCB} & \frac{ngACB}{TEACB} & \frac{ngCCB}{TECCB} & \frac{ngICB}{TEICB} & \frac{ngRCB}{TERCB} \\
+  \frac{petroTCB}{TETCB} & \frac{petroACB}{TEACB} & \frac{petroCCB}{TECCB} & \frac{petroICB}{TEICB} & \frac{petroRCB}{TERCB} \\
+  \frac{reTCB}{TETCB} & \frac{reACB}{TEACB} & \frac{reCCB}{TECCB} & \frac{reICB}{TEICB} & \frac{reRCB}{TERCB} \\
+  \frac{nuTCB}{TETCB} & 0 & 0 & 0 & 0\\
+  \end{pmatrix}
+\]
+% TODO: 公式符号换成比例符号，一些表示的短语缩写放在memo里，把计算coalTCB的公式写出来，每个公式都可以写上，看情况
+\section{Calculating and Simplifying the Model }
+\section{The Model Results}
+\section{Validating the Model}
+\section{Conclusions}
+\section{Evaluate of the Model}
+\section{Strengths and weaknesses}
+\subsection{Strengths}
+\begin{itemize}
+\item \textbf{Applies widely}\\
+This system can be used for many types of airplanes, and it also
+solves the interference during the procedure of the boarding airplane,
+as described above we can get to the optimization
+boarding time. We also know that all the service is automate.
+\item \textbf{Imporve the quality of the airport service}\\
+Balancing the cost of the cost and the benefit, it will bring in more convenient
+for airport and passengers. It also saves many human resources for the airline.
+\end{itemize}
+% 摘要
+\begin{thebibliography} {99}
+  \bibitem{1} D.~E. KNUTH   The \TeX{}book  the American
+  Mathematical Society and Addison-Wesley
+  Publishing Company , 1984-1986.
+  \bibitem{2}Lamport, Leslie,  \LaTeX{}: `` A Document Preparation System '',
+  Addison-Wesley Publishing Company, 1986.
+  \bibitem{3}\url{http://www.latexstudio.net/}
+  \bibitem{4}\url{http://www.chinatex.org/}
+\end{thebibliography}
+
+\begin{appendices}
+  \section{First appendix}
+  Here are simulation programmes we used in our model as follow.\\
+  % \textbf{\textcolor[rgb]{0.98,0.00,0.00}{Input matlab source:}}
+  % \lstinputlisting[language=Matlab]{./code/mcmthesis-matlab1.m}
+  \section{Second appendix}
+  % some more text \textcolor[rgb]{0.98,0.00,0.00}{\textbf{Input C++ source:}}
+  %\lstinputlisting[language=C++]{./code/mcmthesis-sudoku.cpp}
+\end{appendices}
+
+\end{document}
