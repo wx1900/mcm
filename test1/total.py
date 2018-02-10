@@ -3,19 +3,20 @@ import csv
 import numpy as np
 import matplotlib.pyplot as plt
 
-#读取
-csvFile = open("use_all_btu.csv", "r")
+# 读取
+csvFile = open("data/tx.csv", "r")
 reader = csv.reader(csvFile)  # 返回的是迭代类型
 data = []
 for line in reader:
-    if (line[1] == 'CA'):
-        # print(line[2:])
-        data.append(line[2:])
+    data.append(line)
 csvFile.close()
 
+# 计算清洁能源和可再生能源与不可再生能源的总消耗的比值
+# 以加州为例，　画散点图
 CARETCB = []
 CATETCB = []
 CANUETB = []
+
 for line in data:
     if (line[0] == 'RETCB'):
         CARETCB.append(line[1:])
@@ -23,9 +24,13 @@ for line in data:
         CATETCB.append(line[1:])
     elif (line[0] == 'NUETB'):
         CANUETB.append(line[1:])
+print("CATETCB")
 print(CATETCB)
+print("CARETCB")
 print(CARETCB)
+print("CANUETB")
 print(CANUETB)
+print("\n")
 
 # print(len(CATETCB[0]))
 REVNE = []
@@ -43,5 +48,5 @@ print(REVNE)
 x = range(1960, 2009)
 y = REVNE
 plt.scatter(x, y, alpha=.5)
-plt.title('the ratio of total consumption of RE and NE')
+# plt.title('the ratio of total consumption of RE and NE')
 plt.show()
