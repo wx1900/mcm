@@ -577,14 +577,14 @@ for i in range(0, len(NUETB[0])):
 print('\nnuVT\n')
 print(nuVT)
 
-x = range(1960, 2009)
-ycoalVT = coalVT[0:49]
-yngVT = ngVT[0:49]
-ypotVT = potVT[0:49]
-yreVT = reVT[0:49]
-ynuVT = nuVT[0:49]
-plt.xlabel('Time(year)')
-plt.ylabel('Ratio')
+x = range(1960, 20010)
+ycoalVT = coalVT[0:50]
+yngVT = ngVT[0:50]
+ypotVT = potVT[0:50]
+yreVT = reVT[0:50]
+ynuVT = nuVT[0:50]
+# plt.xlabel('Time(year)')
+# plt.ylabel('Ratio')
 # plt.scatter(x, ycoalVT, c='y', alpha=0.7, label='Coal')
 # plt.scatter(x, yngVT, c='r', alpha=0.7, label='Natrual Gas')
 # plt.scatter(x, ypotVT, c='g', alpha=0.7, label='Petroleum')
@@ -596,25 +596,25 @@ plt.ylabel('Ratio')
 # plt.savefig("fig/energyprofile_"+state+".png", additional_artists=art, bbox_inches = "tight")
 # plt.show()
 
-ycoalVA = coalVA[0:49]
-ycoalVC = coalVC[0:49]
-ycoalVI = coalVI[0:49]
-ycoalVR = coalVR[0:49]
+ycoalVA = coalVA[0:50]
+ycoalVC = coalVC[0:50]
+ycoalVI = coalVI[0:50]
+ycoalVR = coalVR[0:50]
 
-yngVA = ngVA[0:49]
-yngVC = ngVC[0:49]
-yngVI = ngVI[0:49]
-yngVR = ngVR[0:49]
+yngVA = ngVA[0:50]
+yngVC = ngVC[0:50]
+yngVI = ngVI[0:50]
+yngVR = ngVR[0:50]
     
-ypotVA = potVA[0:49]
-ypotVC = potVC[0:49]
-ypotVI = potVI[0:49]
-ypotVR = potVR[0:49]
+ypotVA = potVA[0:50]
+ypotVC = potVC[0:50]
+ypotVI = potVI[0:50]
+ypotVR = potVR[0:50]
 
-yreVA = reVA[0:49]
-yreVC = reVC[0:49]
-yreVI = reVI[0:49]
-yreVR = reVR[0:49]
+yreVA = reVA[0:50]
+yreVC = reVC[0:50]
+yreVI = reVI[0:50]
+yreVR = reVR[0:50]
 
 # plt.scatter(x, ycoalVA, c='y', alpha=.7, label='Coal')
 # plt.scatter(x, yngVA, c='r', alpha=.7, label='Natrual Gas')
