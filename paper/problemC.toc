@@ -1,18 +1,29 @@
-\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
 \contentsline {section}{\numberline {2}Establishing Energy profile}{2}{section.2}
-\contentsline {subsection}{\numberline {2.1}Energy classification}{2}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Introduce four kinds of departments}{2}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Construct the formula and explain the calculation process}{3}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Calculation of the total consumption of five types of energy}{3}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Calculate the consumption of five kinds of energy in four sectors separately}{3}{subsubsection.2.3.2}
-\contentsline {subsection}{\numberline {2.4}Formula for energy profile}{3}{subsection.2.4}
-\contentsline {section}{\numberline {3}Calculating and Simplifying the Model }{4}{section.3}
-\contentsline {section}{\numberline {4}The Model Results}{4}{section.4}
-\contentsline {section}{\numberline {5}Validating the Model}{4}{section.5}
-\contentsline {section}{\numberline {6}Conclusions}{4}{section.6}
-\contentsline {section}{\numberline {7}Evaluate of the Model}{4}{section.7}
-\contentsline {section}{\numberline {8}Strengths and weaknesses}{4}{section.8}
-\contentsline {subsection}{\numberline {8.1}Strengths}{4}{subsection.8.1}
-\contentsline {section}{Appendices}{4}{section*.2}
-\contentsline {section}{Appendix \numberline {A}First appendix}{4}{Appendix.a.A}
-\contentsline {section}{Appendix \numberline {B}Second appendix}{5}{Appendix.a.B}
+\contentsline {subsection}{\numberline {2.1}Data analysis and preparation}{2}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Energy classification}{2}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Four kinds of industries}{3}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}The calculation process}{3}{subsubsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.4}Formula for energy profile}{4}{subsubsection.2.1.4}
+\contentsline {subsection}{\numberline {2.2}California' energy profile}{5}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Overview}{5}{subsubsection.2.2.1}
+\contentsline {subsection}{\numberline {2.3}Main energy sources}{5}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Arizona' energy profile}{6}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Overview}{6}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Main energy sources}{6}{subsubsection.2.4.2}
+\contentsline {subsection}{\numberline {2.5}New Mexico's energy profile}{7}{subsection.2.5}
+\contentsline {subsubsection}{\numberline {2.5.1}Overview}{7}{subsubsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.2}Main energy sources}{8}{subsubsection.2.5.2}
+\contentsline {subsection}{\numberline {2.6}Texas's energy profile}{9}{subsection.2.6}
+\contentsline {subsubsection}{\numberline {2.6.1}Overview}{9}{subsubsection.2.6.1}
+\contentsline {subsection}{\numberline {2.7}Main energy sources}{9}{subsection.2.7}
+\contentsline {section}{\numberline {3}Calculating and Simplifying the Model }{10}{section.3}
+\contentsline {section}{\numberline {4}The Model Results}{10}{section.4}
+\contentsline {section}{\numberline {5}Validating the Model}{10}{section.5}
+\contentsline {section}{\numberline {6}Conclusions}{10}{section.6}
+\contentsline {section}{\numberline {7}Evaluate of the Model}{10}{section.7}
+\contentsline {section}{\numberline {8}Strengths and weaknesses}{10}{section.8}
+\contentsline {subsection}{\numberline {8.1}Strengths}{10}{subsection.8.1}
+\contentsline {section}{Appendices}{11}{section*.2}
+\contentsline {section}{Appendix \numberline {A}First appendix}{11}{Appendix.a.A}
+\contentsline {section}{Appendix \numberline {B}Second appendix}{11}{Appendix.a.B}

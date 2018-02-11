@@ -18,7 +18,7 @@ csvFile.close()
 # Coal
 coal = ['CL', 'CC']
 # Natrual Gas
-ng = ['NG','NN']
+ng = ['NN'] # NG
 # Potroleum
 potroleum = ['AB','AR','AV','CO','DF','DK','FF','FN','FO','FS',
             'JF','JK','KS','LG','LO','LU','MB','MG','MS','NA',

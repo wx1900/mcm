@@ -1,1 +1,1 @@
-  \frac{ngTCB}{TETCB} & \frac{ngACB}{TEACB} & \frac{ngCCB}{TECCB} & \frac{ngICB}{TEICB} & \frac{ngRCB}{TERCB} \\
+  \frac{reTCB}{TETCB} & \frac{reACB}{TEACB} & \frac{reCCB}{TECCB} & \frac{reICB}{TEICB} & \frac{reRCB}{TERCB} \\

@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1518285451 "problemC.tex" "/home/thea/all/python/mcm/paper/problemC.pdf" "problemC" 1518285453
+["pdflatex"] 1518319867 "problemC.tex" "/home/thea/all/python/mcm/paper/problemC.pdf" "problemC" 1518319869
   "/etc/texmf/web2c/texmf.cnf" 1517561850 1101 af7716885e081ab43982cab7b4672c1a ""
-  "/home/thea/all/python/mcm/paper/problemC.aux" 1518285452 2713 433b0f13eaa7b1c20ae5059ec019368f ""
+  "/home/thea/all/python/mcm/paper/problemC.aux" 1518319868 3774 2ad87221bb07424ac3a621f0978139fa ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -141,14 +141,14 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1503343927 31343 93828589fb0cea665e553ee5a17ad2d4 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1503343927 31343 93828589fb0cea665e553ee5a17ad2d4 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1517562121 3470467 185011aa4561088d1e8ed5872bad8021 ""
-  "problemC.aux" 1518285452 2713 433b0f13eaa7b1c20ae5059ec019368f ""
-  "problemC.out" 1518285452 1440 34b77d9c2e2a87e2022f22a97e7f7d30 ""
-  "problemC.tex" 1518285447 6717 307069e62fd26c667ff05eed27892564 ""
-  "problemC.toc" 1518285452 1583 c2fc322a22af603a6e52facff72077e4 ""
+  "problemC.aux" 1518319868 3774 2ad87221bb07424ac3a621f0978139fa ""
+  "problemC.out" 1518319868 2106 22d7a38c75af926a02d3350e556e0c3c ""
+  "problemC.tex" 1518317681 26756 ba6c8e625607fcfa44603cf25d759427 ""
+  "problemC.toc" 1518319868 2442 101884219ec0d22bd2b434437aae54ec ""
   (generated)
   "problemC.log"
-  "problemC.toc"
   "problemC.aux"
   "/home/thea/all/python/mcm/paper/problemC.log"
-  "/home/thea/all/python/mcm/paper/problemC.pdf"
   "problemC.out"
+  "/home/thea/all/python/mcm/paper/problemC.pdf"
+  "problemC.toc"
