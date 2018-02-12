@@ -74,8 +74,8 @@ def main(state):
             TEACB.append(i[1:])
 
 
-    print("\nTETCB\n")
-    print(TETCB)
+    # print("\nTETCB\n")
+    # print(TETCB)
 
     print("\ncoal\n")
     coalACB = []
@@ -153,7 +153,7 @@ def main(state):
 
     #
 
-    print("\nng\n")
+    # print("\nng\n")
     ngACB = []
     ngCCB = []
     ngRCB = []
@@ -227,7 +227,7 @@ def main(state):
     # print(ngTotTCB)
 
     # potroleum
-    print("\npot\n")
+    # print("\npot\n")
     potACB = []
     potCCB = []
     potRCB = []
@@ -302,11 +302,11 @@ def main(state):
             for j in range(0, len(potTCB[0])):
                 potTotTCB[j] = int(potTotTCB[j]) + int(potTCB[i][j])
 
-    print("\npotTotTCB\n")
-    print(potTotTCB)
+    # print("\npotTotTCB\n")
+    # print(potTotTCB)
 
     #
-    print("\nre\n")
+    # print("\nre\n")
     reACB = []
     reCCB = []
     reRCB = []
@@ -396,7 +396,7 @@ def main(state):
     # WD数据中缺少TCB 
     # NUETB 表示核能的总消耗
     # 核能只计算占总能源比例，不计算产业占比
-    print("nu\n")
+    # print("nu\n")
     NUETB = []
     nuVT = []
     for i in nuData:
@@ -413,273 +413,285 @@ def main(state):
         TECCB[0][i] = int(coalTotCCB[i]) + int(ngTotCCB[i]) + int(potTotCCB[i]) + int(reTotCCB[i]) 
         TEICB[0][i] = int(coalTotICB[i]) + int(ngTotICB[i]) + int(potTotICB[i]) + int(reTotICB[i])
         TERCB[0][i] = int(coalTotRCB[i]) + int(ngTotRCB[i]) + int(potTotRCB[i]) + int(reTotRCB[i])  
-    print("\nTETCB\n")
+    # print("\nTETCB\n")
+    # print(TETCB)
     print(TETCB)
     # 煤在总的消耗中占比
-    coalVT = []
+    # coalVT = []
 
-    for i in range(0, len(TETCB[0])):
-        value = int(coalTotTCB[i])/(int(TETCB[0][i])+1.)
-        coalVT.append(value)
-    print("\ncoalVT\n")
-    print(coalVT)
-    # 煤在各行业消耗中占比
-    coalVA = []
-    coalVC = []
-    coalVI = []
-    coalVR = []
+    # for i in range(0, len(TETCB[0])):
+    #     value = int(coalTotTCB[i])/(int(TETCB[0][i])+1.)
+    #     coalVT.append(value)
+    # print("\ncoalVT\n")
+    # print(coalVT)
+    # # 煤在各行业消耗中占比
+    # coalVA = []
+    # coalVC = []
+    # coalVI = []
+    # coalVR = []
 
-    for i in range(0, len(TEACB[0])):
-        value = int(coalTotACB[i]) / (int(TEACB[0][i])+1.)
-        coalVA.append(value)
-    print("\ncoalVA\n")
-    print(coalVA)
+    # for i in range(0, len(TEACB[0])):
+    #     value = int(coalTotACB[i]) / (int(TEACB[0][i])+1.)
+    #     coalVA.append(value)
+    # print("\ncoalVA\n")
+    # print(coalVA)
 
-    for i in range(0, len(TECCB[0])):
-        value = int(coalTotCCB[i]) / (int(TECCB[0][i])+1.)
-        coalVC.append(value)
-    print("\ncoalVC\n")
-    print(coalVC)
+    # for i in range(0, len(TECCB[0])):
+    #     value = int(coalTotCCB[i]) / (int(TECCB[0][i])+1.)
+    #     coalVC.append(value)
+    # print("\ncoalVC\n")
+    # print(coalVC)
 
-    for i in range(0, len(TEICB[0])):
-        value = int(coalTotICB[i]) / (int(TEICB[0][i])+1.)
-        coalVI.append(value)
-    print("\ncoalVI\n")
-    print(coalVI)
+    # for i in range(0, len(TEICB[0])):
+    #     value = int(coalTotICB[i]) / (int(TEICB[0][i])+1.)
+    #     coalVI.append(value)
+    # print("\ncoalVI\n")
+    # print(coalVI)
 
-    for i in range(0, len(TERCB[0])):
-        value = int(coalTotRCB[i]) / (int(TERCB[0][i])+1.)
-        coalVR.append(value)
-    print("\ncoalVR\n")
-    print(coalVR)
+    # for i in range(0, len(TERCB[0])):
+    #     value = int(coalTotRCB[i]) / (int(TERCB[0][i])+1.)
+    #     coalVR.append(value)
+    # print("\ncoalVR\n")
+    # print(coalVR)
 
-    # 天然气在总的消耗中占比
-    ngVT = []
+    # # 天然气在总的消耗中占比
+    # ngVT = []
 
-    for i in range(0, len(TETCB[0])):
-        value = int(ngTotTCB[i])/(int(TETCB[0][i])+1.)
-        ngVT.append(value)
-    print('\nngVT\n')
-    print(ngVT)
+    # for i in range(0, len(TETCB[0])):
+    #     value = int(ngTotTCB[i])/(int(TETCB[0][i])+1.)
+    #     ngVT.append(value)
+    # print('\nngVT\n')
+    # print(ngVT)
 
-    # 天然气在各行业消耗中占比
-    ngVA = []
-    ngVC = []
-    ngVI = []
-    ngVR = []
+    # # 天然气在各行业消耗中占比
+    # ngVA = []
+    # ngVC = []
+    # ngVI = []
+    # ngVR = []
 
-    for i in range(0, len(TEACB[0])):
-        value = int(ngTotACB[i]) / (int(TEACB[0][i])+1.)
-        ngVA.append(value)
-    print("\nngVA\n")
-    print(ngVA)
+    # for i in range(0, len(TEACB[0])):
+    #     value = int(ngTotACB[i]) / (int(TEACB[0][i])+1.)
+    #     ngVA.append(value)
+    # print("\nngVA\n")
+    # print(ngVA)
 
-    for i in range(0, len(TECCB[0])):
-        value = int(ngTotCCB[i]) / (int(TECCB[0][i])+1.)
-        ngVC.append(value)
-    print("\nngVC\n")
-    print(ngVC)
+    # for i in range(0, len(TECCB[0])):
+    #     value = int(ngTotCCB[i]) / (int(TECCB[0][i])+1.)
+    #     ngVC.append(value)
+    # print("\nngVC\n")
+    # print(ngVC)
 
-    for i in range(0, len(TEICB[0])):
-        value = int(ngTotICB[i]) / (int(TEICB[0][i])+1.)
-        ngVI.append(value)
-    print("\nngVI\n")
-    print(ngVI)
+    # for i in range(0, len(TEICB[0])):
+    #     value = int(ngTotICB[i]) / (int(TEICB[0][i])+1.)
+    #     ngVI.append(value)
+    # print("\nngVI\n")
+    # print(ngVI)
 
-    for i in range(0, len(TERCB[0])):
-        value = int(ngTotRCB[i]) / (int(TERCB[0][i])+1.)
-        ngVR.append(value)
-    print("\nngVR")
-    print(ngVR)
+    # for i in range(0, len(TERCB[0])):
+    #     value = int(ngTotRCB[i]) / (int(TERCB[0][i])+1.)
+    #     ngVR.append(value)
+    # print("\nngVR")
+    # print(ngVR)
 
-    # 石油在总的消耗中占比
-    potVT = []
+    # # 石油在总的消耗中占比
+    # potVT = []
 
-    for i in range(0, len(TETCB[0])):
-        value = int(potTotTCB[i])/(int(TETCB[0][i])+1.)
-        potVT.append(value)
-    print('\npotVT\n')
-    print(potVT)
+    # for i in range(0, len(TETCB[0])):
+    #     value = int(potTotTCB[i])/(int(TETCB[0][i])+1.)
+    #     potVT.append(value)
+    # print('\npotVT\n')
+    # print(potVT)
 
-    # 石油在各行业消耗中占比
-    potVA = []
-    potVC = []
-    potVI = []
-    potVR = []
+    # # 石油在各行业消耗中占比
+    # potVA = []
+    # potVC = []
+    # potVI = []
+    # potVR = []
 
-    for i in range(0, len(TEACB[0])):
-        value = int(potTotACB[i]) / (int(TEACB[0][i])+1.)
-        potVA.append(value)
-    print('\npotVA\n')
-    print(potVA)
+    # for i in range(0, len(TEACB[0])):
+    #     value = int(potTotACB[i]) / (int(TEACB[0][i])+1.)
+    #     potVA.append(value)
+    # print('\npotVA\n')
+    # print(potVA)
 
-    for i in range(0, len(TECCB[0])):
-        value = int(potTotCCB[i]) / (int(TECCB[0][i])+1.)
-        potVC.append(value)
-    print('\npotVC\n')
-    print(potVC)
+    # for i in range(0, len(TECCB[0])):
+    #     value = int(potTotCCB[i]) / (int(TECCB[0][i])+1.)
+    #     potVC.append(value)
+    # print('\npotVC\n')
+    # print(potVC)
 
-    for i in range(0, len(TEICB[0])):
-        value = int(potTotICB[i]) / (int(TEICB[0][i])+1.)
-        potVI.append(value)
-    print('\npotVI\n')
-    print(potVI)
+    # for i in range(0, len(TEICB[0])):
+    #     value = int(potTotICB[i]) / (int(TEICB[0][i])+1.)
+    #     potVI.append(value)
+    # print('\npotVI\n')
+    # print(potVI)
 
-    for i in range(0, len(TERCB[0])):
-        value = int(potTotRCB[i]) / (int(TERCB[0][i])+1.)
-        potVR.append(value)
-    print('\npotVR\n')
-    print(potVR)
+    # for i in range(0, len(TERCB[0])):
+    #     value = int(potTotRCB[i]) / (int(TERCB[0][i])+1.)
+    #     potVR.append(value)
+    # print('\npotVR\n')
+    # print(potVR)
 
-    # 可再生能源在总的消耗中占比
-    reVT = []
+    # # 可再生能源在总的消耗中占比
+    # reVT = []
 
-    for i in range(0, len(TETCB[0])):
-        value = int(reTotTCB[i])/(int(TETCB[0][i])+1.)
-        reVT.append(value)
-    print('\nreVT\n')
-    print(reVT)
+    # for i in range(0, len(TETCB[0])):
+    #     value = int(reTotTCB[i])/(int(TETCB[0][i])+1.)
+    #     reVT.append(value)
+    # print('\nreVT\n')
+    # print(reVT)
 
-    # 可再生在各行业消耗中占比
-    reVA = []
-    reVC = []
-    reVI = []
-    reVR = []
+    # # 可再生在各行业消耗中占比
+    # reVA = []
+    # reVC = []
+    # reVI = []
+    # reVR = []
 
-    for i in range(0, len(TEACB[0])):
-        value = int(reTotACB[i]) / (int(TEACB[0][i])+1.)
-        reVA.append(value)
-    print('\nreVA\n')
-    print(reVA)
+    # for i in range(0, len(TEACB[0])):
+    #     value = int(reTotACB[i]) / (int(TEACB[0][i])+1.)
+    #     reVA.append(value)
+    # print('\nreVA\n')
+    # print(reVA)
 
-    for i in range(0, len(TECCB[0])):
-        value = int(reTotCCB[i]) / (int(TECCB[0][i])+1.)
-        reVC.append(value)
-    print('\nreVC\n')
-    print(reVC)
+    # for i in range(0, len(TECCB[0])):
+    #     value = int(reTotCCB[i]) / (int(TECCB[0][i])+1.)
+    #     reVC.append(value)
+    # print('\nreVC\n')
+    # print(reVC)
 
-    for i in range(0, len(TEICB[0])):
-        value = int(reTotICB[i]) / (int(TEICB[0][i])+1.)
-        reVI.append(value)
-    print('\nreVI\n')
-    print(reVI)
+    # for i in range(0, len(TEICB[0])):
+    #     value = int(reTotICB[i]) / (int(TEICB[0][i])+1.)
+    #     reVI.append(value)
+    # print('\nreVI\n')
+    # print(reVI)
 
-    for i in range(0, len(TERCB[0])):
-        value = int(reTotRCB[i]) / (int(TERCB[0][i])+1.)
-        reVR.append(value)
-    print('\nreVR\n')
-    print(reVR)
+    # for i in range(0, len(TERCB[0])):
+    #     value = int(reTotRCB[i]) / (int(TERCB[0][i])+1.)
+    #     reVR.append(value)
+    # print('\nreVR\n')
+    # print(reVR)
 
-    # Nuclear electric
-    for i in range(0, len(NUETB[0])):
-        value = int(NUETB[0][i])/(int(TETCB[0][i])+1.)
-        nuVT.append(value)
-    print('\nnuVT\n')
-    print(nuVT)
+    # # Nuclear electric
+    # for i in range(0, len(NUETB[0])):
+    #     value = int(NUETB[0][i])/(int(TETCB[0][i])+1.)
+    #     nuVT.append(value)
+    # print('\nnuVT\n')
+    # print(nuVT)
 
-    x = range(1960, 2010)
-    ycoalVT = coalVT[0:50]
-    yngVT = ngVT[0:50]
-    ypotVT = potVT[0:50]
-    yreVT = reVT[0:50]
-    ynuVT = nuVT[0:50]
-    plt.xlabel('Time(year)')
-    plt.ylabel('Ratio')
-    plt.scatter(x, ycoalVT, c='y', alpha=.9, label='Coal')
-    plt.scatter(x, yngVT, c='r', alpha=0.9, label='Natrual Gas')
-    plt.scatter(x, ypotVT, c='g', alpha=0.9, label='Petroleum')
-    plt.scatter(x, yreVT, c='m', alpha=0.7, label='Renewable Energy')
-    plt.scatter(x, ynuVT, c='b', alpha=0.7, label='Nuclear electric')
-    art = []
-    lgd = plt.legend(loc=9, bbox_to_anchor=(0.5,-0.1),ncol = 2)
-    art.append(lgd)
-    plt.savefig("fig/newenergyprofile_"+state+".png", additional_artists=art, bbox_inches = "tight")
-    plt.show()
+    # x = range(1960, 2010)
+    # ycoalVT = coalVT[0:50]
+    # yngVT = ngVT[0:50]
+    # ypotVT = potVT[0:50]
+    # yreVT = reVT[0:50]
+    # ynuVT = nuVT[0:50]
+    # plt.xlabel('Time(year)')
+    # plt.ylabel('Ratio')
+    # plt.scatter(x, ycoalVT, c='y', alpha=.9, label='Coal')
+    # plt.scatter(x, yngVT, c='r', alpha=0.9, label='Natrual Gas')
+    # plt.scatter(x, ypotVT, c='g', alpha=0.9, label='Petroleum')
+    # plt.scatter(x, yreVT, c='m', alpha=0.7, label='Renewable Energy')
+    # plt.scatter(x, ynuVT, c='b', alpha=0.7, label='Nuclear electric')
+    # art = []
+    # lgd = plt.legend(loc=9, bbox_to_anchor=(0.5,-0.1),ncol = 2)
+    # art.append(lgd)
+    # plt.savefig("fig/newenergyprofile_"+state+".png", additional_artists=art, bbox_inches = "tight")
+    # plt.show()
 
-    ycoalVA = coalVA[0:50]
-    ycoalVC = coalVC[0:50]
-    ycoalVI = coalVI[0:50]
-    ycoalVR = coalVR[0:50]
+    # ycoalVA = coalVA[0:50]
+    # ycoalVC = coalVC[0:50]
+    # ycoalVI = coalVI[0:50]
+    # ycoalVR = coalVR[0:50]
 
-    yngVA = ngVA[0:50]
-    yngVC = ngVC[0:50]
-    yngVI = ngVI[0:50]
-    yngVR = ngVR[0:50]
+    # yngVA = ngVA[0:50]
+    # yngVC = ngVC[0:50]
+    # yngVI = ngVI[0:50]
+    # yngVR = ngVR[0:50]
         
-    ypotVA = potVA[0:50]
-    ypotVC = potVC[0:50]
-    ypotVI = potVI[0:50]
-    ypotVR = potVR[0:50]
+    # ypotVA = potVA[0:50]
+    # ypotVC = potVC[0:50]
+    # ypotVI = potVI[0:50]
+    # ypotVR = potVR[0:50]
 
-    yreVA = reVA[0:50]
-    yreVC = reVC[0:50]
-    yreVI = reVI[0:50]
-    yreVR = reVR[0:50]
+    # yreVA = reVA[0:50]
+    # yreVC = reVC[0:50]
+    # yreVI = reVI[0:50]
+    # yreVR = reVR[0:50]
 
-    plt.scatter(x, ycoalVA, c='y', alpha=.7, label='Coal')
-    plt.scatter(x, yngVA, c='r', alpha=.7, label='Natrual Gas')
-    plt.scatter(x, ypotVA, c='g', alpha=.7, label='Petroleum')
-    plt.scatter(x, yreVA, c='m', alpha=.7, label='Renewable Energy')
-    art = []
-    lgd = plt.legend(loc=9, bbox_to_anchor=(0.5,-0.1),ncol = 2)
-    art.append(lgd)
-    plt.savefig("fig/newtransportation_"+state+".png", additional_artists=art, bbox_inches = "tight")
-    plt.close()
+    # plt.scatter(x, ycoalVA, c='y', alpha=.7, label='Coal')
+    # plt.scatter(x, yngVA, c='r', alpha=.7, label='Natrual Gas')
+    # plt.scatter(x, ypotVA, c='g', alpha=.7, label='Petroleum')
+    # plt.scatter(x, yreVA, c='m', alpha=.7, label='Renewable Energy')
+    # art = []
+    # lgd = plt.legend(loc=9, bbox_to_anchor=(0.5,-0.1),ncol = 2)
+    # art.append(lgd)
+    # plt.savefig("fig/newtransportation_"+state+".png", additional_artists=art, bbox_inches = "tight")
+    # plt.close()
 
-    plt.scatter(x, ycoalVC, c='y', alpha=.7, label='Coal')
-    plt.scatter(x, yngVC, c='r', alpha=.7, label='Natrual Gas')
-    plt.scatter(x, ypotVC, c='g', alpha=.7, label='Petroleum')
-    plt.scatter(x, yreVC, c='m', alpha=.7, label='Renewable Energy')
-    art = []
-    lgd = plt.legend(loc=9, bbox_to_anchor=(0.5,-0.1),ncol = 2)
-    art.append(lgd)
-    plt.savefig("fig/newcommercial_"+state+".png", additional_artists=art, bbox_inches = "tight")
-    plt.close()
+    # plt.scatter(x, ycoalVC, c='y', alpha=.7, label='Coal')
+    # plt.scatter(x, yngVC, c='r', alpha=.7, label='Natrual Gas')
+    # plt.scatter(x, ypotVC, c='g', alpha=.7, label='Petroleum')
+    # plt.scatter(x, yreVC, c='m', alpha=.7, label='Renewable Energy')
+    # art = []
+    # lgd = plt.legend(loc=9, bbox_to_anchor=(0.5,-0.1),ncol = 2)
+    # art.append(lgd)
+    # plt.savefig("fig/newcommercial_"+state+".png", additional_artists=art, bbox_inches = "tight")
+    # plt.close()
 
-    plt.scatter(x, ycoalVI, c='y', alpha=.7, label='Coal')
-    plt.scatter(x, yngVI, c='r', alpha=.7, label='Natrual Gas')
-    plt.scatter(x, ypotVI, c='g', alpha=.7, label='Petroleum')
-    plt.scatter(x, yreVI, c='m', alpha=.7, label='Renewable Energy')
-    art = []
-    lgd = plt.legend(loc=9, bbox_to_anchor=(0.5,-0.1),ncol = 2)
-    art.append(lgd)
-    plt.savefig("fig/newIndustrial_"+state+".png", additional_artists=art, bbox_inches = "tight")
-    plt.close()
+    # plt.scatter(x, ycoalVI, c='y', alpha=.7, label='Coal')
+    # plt.scatter(x, yngVI, c='r', alpha=.7, label='Natrual Gas')
+    # plt.scatter(x, ypotVI, c='g', alpha=.7, label='Petroleum')
+    # plt.scatter(x, yreVI, c='m', alpha=.7, label='Renewable Energy')
+    # art = []
+    # lgd = plt.legend(loc=9, bbox_to_anchor=(0.5,-0.1),ncol = 2)
+    # art.append(lgd)
+    # plt.savefig("fig/newIndustrial_"+state+".png", additional_artists=art, bbox_inches = "tight")
+    # plt.close()
 
-    plt.scatter(x, ycoalVR, c='y', alpha=.7, label='Coal')
-    plt.scatter(x, yngVR, c='r', alpha=.7, label='Natrual Gas')
-    plt.scatter(x, ypotVR, c='g', alpha=.7, label='Petroleum')
-    plt.scatter(x, yreVR, c='m', alpha=.7, label='Renewable Energy')
-    art = []
-    lgd = plt.legend(loc=9, bbox_to_anchor=(0.5,-0.1),ncol = 2)
-    art.append(lgd)
-    plt.savefig("fig/newResidential_"+state+".png", additional_artists=art, bbox_inches = "tight")
-    plt.close()
+    # plt.scatter(x, ycoalVR, c='y', alpha=.7, label='Coal')
+    # plt.scatter(x, yngVR, c='r', alpha=.7, label='Natrual Gas')
+    # plt.scatter(x, ypotVR, c='g', alpha=.7, label='Petroleum')
+    # plt.scatter(x, yreVR, c='m', alpha=.7, label='Renewable Energy')
+    # art = []
+    # lgd = plt.legend(loc=9, bbox_to_anchor=(0.5,-0.1),ncol = 2)
+    # art.append(lgd)
+    # plt.savefig("fig/newResidential_"+state+".png", additional_artists=art, bbox_inches = "tight")
+    # plt.close()
 
-    with open('data/energyprofile_'+state+'.csv','w') as fout:
-        writer=csv.writer(fout)    
-        writer.writerows([ycoalVT])
-        writer.writerows([ycoalVA])
-        writer.writerows([ycoalVC])
-        writer.writerows([ycoalVI])                                                                                                                         
-        writer.writerows([ycoalVR])                                                                                                 
-        writer.writerows([yngVT])                                                                                                                                                                                                                                                                                                                                                                                                                   
-        writer.writerows([yngVA])
-        writer.writerows([yngVC])
-        writer.writerows([yngVI])                                                                                   
-        writer.writerows([yngVR])
-        writer.writerows([ypotVT])
-        writer.writerows([ypotVA])                                                                                                                                                            
-        writer.writerows([ypotVC])
-        writer.writerows([ypotVI])
-        writer.writerows([ypotVR])
-        writer.writerows([yreVT])
-        writer.writerows([yreVA])
-        writer.writerows([yreVC])
-        writer.writerows([yreVI])
-        writer.writerows([yreVR])
-        writer.writerows([ynuVT])
+    # with open('data/energyprofile_'+state+'.csv','w') as fout:
+    #     writer=csv.writer(fout)    
+    #     writer.writerows([ycoalVT])
+    #     writer.writerows([ycoalVA])
+    #     writer.writerows([ycoalVC])
+    #     writer.writerows([ycoalVI])                                                                                                                         
+    #     writer.writerows([ycoalVR])                                                                                                 
+    #     writer.writerows([yngVT])                                                                                                                                                                                                                                                                                                                                                                                                                   
+    #     writer.writerows([yngVA])
+    #     writer.writerows([yngVC])
+    #     writer.writerows([yngVI])                                                                                   
+    #     writer.writerows([yngVR])
+    #     writer.writerows([ypotVT])
+    #     writer.writerows([ypotVA])                                                                                                                                                            
+    #     writer.writerows([ypotVC])
+    #     writer.writerows([ypotVI])
+    #     writer.writerows([ypotVR])
+    #     writer.writerows([yreVT])
+    #     writer.writerows([yreVA])
+    #     writer.writerows([yreVC])
+    #     writer.writerows([yreVI])
+    #     writer.writerows([yreVR])
+    #     writer.writerows([ynuVT])
 
 states = ['ca','az','nm','tx']
 for i in states:
-    main(i)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+    print(i)
+    main(i)
+# 总能源
+# ca
+# 16506589
+# az
+# 3880260
+# nm
+# 1777266
+# tx
+# 30806649
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             

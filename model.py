@@ -14,6 +14,7 @@ from mpl_toolkits.mplot3d import Axes3D
 # 取数据
 
 def main(state, lowstate):
+
     csvFile = open("data/TPOPP.csv", "r")
     reader = csv.reader(csvFile)  # 返回的是迭代类型
     x1 = []
@@ -129,7 +130,7 @@ def main(state, lowstate):
         plt.ylabel('GDPRV')
         plt.title(yvar[k])
         # plt.show()
-        plt.savefig('fig/'+state+'_'+yvar[k]+'.png')
+        # plt.savefig('fig/'+state+'_'+yvar[k]+'.png')
         plt.close()
         # break
     #     error = mean_absolute_error(y_test, y_pret)
@@ -155,5 +156,23 @@ def main(state, lowstate):
 
 state = ['CA','AZ','TX','NM']
 lowstate = ['ca','az','tx','nm']
-for i in range(0,len(state)):
+
+for i in range(0,1):
     main(state[i], lowstate[i])
+
+# population
+# ca_2025
+# 42326397
+# ca_2050
+# 49077801
+# 
+# gdp https://knoema.com/qhswwkc/us-gdp-growth-forecast-2017-2022-and-up-to-2060-data-and-charts
+# 2019 2.64
+# 2020 2.56
+# 2025 2.40
+# 2030 2.28
+# 2035 2.04
+# 2040 1.82
+# 2045 1.66
+# 2050 1.54
+
