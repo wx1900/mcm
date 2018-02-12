@@ -1,7 +1,7 @@
 %!TeX program = xelatex
 %!TeX builder = latexmk
 \documentclass{mcmthesis}
-\mcmsetup{tcn = 88277, problem = C}
+\mcmsetup{tcn = 88277, problem = C, titlepage = false}
 \usepackage{blindtext}      % 提供 \blindtext 命令，演示用
 \usepackage{subfigure}
 \usepackage{caption}
@@ -17,10 +17,20 @@
 \begin{document}
 % 摘要
 \begin{abstract}
-abstract content blablabla \\
-next line
+  Energy is a major issue in the world. Societies use energy for transportation, commercial, residential, industrial and domestic purpose.
+  In the United States, many aspects of energy policy are decentralized to the state level.
+  In this paper, we propose an energy profiile for four states, California, Arizona, New Mexico and Texas. The Energy profile shows the annual energy consumption and structure.
+  In order to better describe the energy profile, we determine some metrics to represent the energy consumption and structure, which been formed into an formula.
+  By analyzing each state's status and calculating each state's energy formula, we establish a complete energy profile for each state. To our best knowledge, the energy consumption is ralated to
+  GDP (Gross domestic product) , Population and Energy per unit of GDP. Therefore, we build a multiple linear regression model to evaluate the relationship of these variables.
+  % We use $MBE$ (Mean absolute error regression loss) and $R^2\ (coefficient\ of\ determination)\ regression\ score\ function$ to evaluate the model.
+  For the evaluation of the "best" profile for using cleaner, renewable energy, we propose a criteria. There are four metrics in this criteria. The first is the proportion of cleaner, renewable energy consumption in the total energy consumption.
+  The second is the proportion of cleaner, renewable energy consumption in four industries. The third metric is energy consumption per capita and the last one is energy intensity.
+  We use these metrics to calculate their scores and compare the scores to find the best one.
+  Next, we use the model to predict the energy profile in 2025 and 2050 for each state. After that we combine the prediction and criteria to form the targets for each state.
+  According to the targets, we propose five measures to help reach the targets.
 % 用 \\ 换行
-% 关键字
+% 关键
 \begin{keywords}
 keyword1; keyword2
 \end{keywords}
@@ -31,17 +41,23 @@ keyword1; keyword2
 \tableofcontents
 % 介绍 Introduction
 \section{Introduction}
-Energy is a major issue in the world. Societies use energy for transportation, commercial, residential, industrial and domestic purpose.
-%TODO: More backgrounds
-In this paper, we propose a formula to describe the energy profile. We determine the metrics to represent the energy consumption and structure.
-We select the related variables from the variable list.
-Finally, we use the variable to describe the energy profile's formula, which shows the energy consumption and structure.
-By analysing each state's status, we establish the energy profile for each state.
-Then we build a multiple linear regression model with two variables, GDP (Gross domestic product) and population.
-We use $MBE$ (Mean absolute error regression loss) and $R^2\ (coefficient\ of\ determination)\ regression\ score\ function$ to evaluate the model.
+Energy is a major issue in the world. The current world environment calls for increasing the use of cleaner, renewable energy.
+Most new renewable energy capacity is installed in developing
+countries, and largely in China, the single largest developer of
+renewable power and heat over the past eight years. In 2016,
+renewable energy spread to a growing number of developing and
+emerging economies, some of which have become important
+markets.
+In this paper, In this paper, we propose an energy profiile for four states, California, Arizona, New Mexico and Texas. The Energy profile shows the annual energy consumption and structure.
+A formula is bring forward to describe the energy profile. We determine the metrics to represent the energy consumption and structure and select related variables from the variable list to calculate the metrics.
+By analysing each state's status and the energy formula, we establish a complete energy profile for each state.
+To our best knowledge, the energy consumption is ralated to
+GDP (Gross domestic product) , Population and Energy per unit of GDP. Therefore, we build a multiple linear regression model to evaluate the relationship of these variables.
+We use $MBE$ (Mean absolute error regression loss) and $R^2$ (coefficient of determination) regression score function to evaluate the model.
+For the evaluation of the "best" profile for using cleaner, renewable energy, we propose a criteria. There are four metrics in this criteria. The first is the proportion of cleaner, renewable energy consumption in the total energy consumption.
 Then we forward a criteria to estimate the "best" profile for using cleaner, renewable energy.
 We use four metrics and gathering the states's rank in each metric to find the best state.
-Next, we find predict the energy profile in 2025 and 2050 for each state. After that we combine the prediction and criteria to form the targets for each state.
+Next, we use the model to predict the energy profile in 2025 and 2050 for each state. After that we combine the prediction and criteria to form the targets for each state.
 Accroding to the targets, we proposed five measures to rach the target.
 % section
 \section{Establishing Energy profile}
@@ -54,8 +70,7 @@ in different industries to reflect changes of energy structure.
 \subsection{Data analysis and preparation}
 
 \subsubsection{Energy classification}
-Energy sources have been classified into five main kinds. Each kind energy is a set. Each set has one or more subcatorgories. The subcatorgories of each kind
-have been listed in the memo page.%TODO: MEMO
+Energy sources have been classified into five main kinds. Each kind energy is a set. Each set has one or more subcatorgories.
 \begin{itemize}
     \item Coal\\
     Includes coal ($CL$) and coal coke ($CC$). Recorded as $coal$ . Then $coal = \{CL, CC\}$
@@ -63,10 +78,10 @@ have been listed in the memo page.%TODO: MEMO
     Includes natural gas ($NN$). Recorded as $ng$ . Then $ng = \{NN\}$
     \item Petroleum\\
     Includes aviation gasoline ($AB$), crude oil ($CO$), fossile fuels ($ff$), jet fuel ($JF$) etc.
-    Recorded as $petro$. Then $petro = \{AB, AR, AV, CO, DF, FF, FN, ... \}$. More variables are listed in the memo page.
+    Recorded as $petro$. \\ Then $petro = \{AB, AR, AV, CO, DF, FF, FN, ... \}$.
     \item Renewable Energy\\
     Includes fuel ethanol ($EN$), geothermal energy ($GE$), solar energy ($GO$), wind ($WY$) and wood ($WD$) etc.
-    Recorded as $re$ . Then $re = \{BM, EN, EM, ES, GE, GO, ... \}$
+    Recorded as $re$ . \\ Then $re = \{BM, EN, EM, ES, GE, GO, ... \}$
     \item Nuclear electric power\\
     Includes nuclear electric power ($NU$). Recorded as $nu$ . Then $nu = \{NU\}$
 \end{itemize}
@@ -114,7 +129,6 @@ Such as, record the total energy annual consumption is $TETCB$, and the result o
 $$coalVT = \frac{coalTCB}{TETCB}$$
 And use $coalVA$ to record $coalACB$ to devide $TEACB$.
 $$coalVA = \frac{coalACB}{TEACB}$$
-More variables have been listed in the memo page.\\
 The final representation of the formula is
 $$
   EP =
@@ -203,7 +217,7 @@ The main energy source in Arizona is oil.
   Mesa field, one of the 30 largest coal mines in the country. Arizona started to use coal from the 1970s and quickly became a significant $12\%$ energy
   source in the 1980s. It began to slowly decline to $8\%$ (2009) in the early 1990's and remained stable. Industrial coal,
   which grew rapidly from the mid-1970s to the late 1980s, reached $20\%$ at one point and quickly dropped to $8\%$ in the early 1990s and remained stable．
-\subsection{New Mexico's energy profile}
+\subsection{New Mexico' energy profile}
 New Mexico is with much land but few people. Although it is the fifth-largest state by area, it is the sixth-least densely populated.
 New Mexico is the nation's 7th largest net energy supply state, rich in fossil fuels, minerals and renewable energy resources.
 The oil and gas industry, contributes significantly to the state's gross domestic product (GDP),
@@ -248,7 +262,7 @@ New Mexico's energy consumption per dollar of GDP and energy consumption per cap
   \caption{Energy consumption, Texas}
   \end{minipage}
   \end{figure}
-\subsection{Texas's energy profile}
+\subsection{Texas' energy profile}
 Texas, located in the south-central part of the United States, is the second largest in size in the United States.
 The Texas Almanac classifies the state into four regions: Gulf Coastal Plains, Interior Lowlands, Great Plains, and Basin and Range Province.
 he Texas climate varies significantly from east to west. Moist air from the Gulf of Mexico sweeps westward across the state, losing moisture as it goes.
@@ -281,7 +295,6 @@ he Texas climate varies significantly from east to west. Moist air from the Gulf
   whose emissions of carbon dioxide and sulfur dioxide are mainly from electricity generation and the highest in the country.
   The proportion of coal's energy consumption is on the rise, reaching about $5\%$ by 2009. However, the proportion of coal in
   various sectors is the lowest among all other resources.
-% TODO: Polish energy profile and cut some unimportant part
 
 \section{Developing the Model}
 \subsection{Assumption}
@@ -307,7 +320,7 @@ $$EP = \alpha_0 + \alpha_1 * Population + \label_2 * GDP + \label_3 * Energy\ pe
 % 用回归分析，解释为什么用；以及说明建模过程中的一些细节问题;
 \subsection{The Model Results}
 We compared the error of the two models. By compare the $R^2\ score$, we calculated the four states separately,
-find that more than a half of the result of second model is better than the first model. %(TODO:insert table)
+find that more than a half of the result of second model is better than the first model.
 
 \begin{table}[!htbp]
 \centering
@@ -331,64 +344,6 @@ Texas& 0.6666666666666666 \\
 \includegraphics[width=12cm]{CA_reVT.png}
 \caption{Renewable Energy Consumption's ralationship with GDP and Population} \label{fig:aa}
 \end{figure}
-%
-% \begin{table}[!htbp]
-% \centering
-% \caption{a}\label{tab:aStrangeTable}
-% \begin{tabular}{ccc}
-% \toprule
-% Variables& MBE& R^2\\
-% \midrule
-% Ch'en Meng& 001& Male\\
-% Sarah Brightman& 002& Female\\
-% \bottomrule
-% \end{tabular}
-% \end{table}
-% \begin{table}[h!]
-%   \centering
-%   \caption{Model error for California}
-%   \label{tab:table1}
-%   \begin{tabular}{ccc}
-%     \toprule
-%     Variables & MBE & R^2\\
-%     \midrule
-%     coalVT	& 0.0008044891	& 0.0417302872 \\
-%     coalVA	& 2.14623183534656E-06	& 0.4681465981\\
-%     coalVC	& 0.000517853	& 0.3722870458 \\
-%     coalVI	& 0.0040203466 & 0.25896736 \\
-%     coalVR	& 9.6843507961811E-05	& -0.0425480067 \\
-%     ngVT	& 0.0077195916	& 0.119103722 \\
-%     ngVA	& 0.0008373601	& 0.6288560266 \\
-%     ngVC	& 0.015049411	& 0.7549557304 \\
-%     ngVI	& 0.0270951153	& 0.6848572025 \\
-%     ngVR	& 0.0095303215	& 0.9545667853 \\
-%     petroVT	& 0.0086889409	& 0.5007391906 \\
-%     petroVA	& 0.0021181725	& 0.8153156324 \\
-%     petroVC	& 0.0111721378	& 0.3467558584 \\
-%     petroVI	& 0.031965453	& 0.5302410519 \\
-%     petroVR	& 0.0064876244	& 0.9383029899 \\
-%     reVT	& 0.0067068334	& 0.1888766313 \\
-%     reVA	& 0.0013557953	& 0.8915757985 \\
-%     reVC	& 0.0068823815	& 0.9201289253 \\
-%     reVI	& 0.0072269526	& 0.7168082396 \\
-%     reVR	& 0.0102720658	& 0.8322201492 \\
-%     nuVT	& 0.0024848158	& 0.8121893345
-%     \bottomrule
-%   \end{tabular}
-% \end{table}
-%
-% \begin{filecontents*}{model2.0_error_ca.csv}
-% name,givenname,matriculation,gender,grade
-% Maier,Hans,12345,m,1.0
-% Huber,Anna,23456,f,2.3
-% Weisbaeck,Werner,34567,m,5.0
-% \end{filecontents*}
-%
-%     \begin{tabular}{l|c}%
-%     \bfseries Person & \bfseries Matr.~No.% specify table head
-%     \csvreader[head to column names]{model2.0_error_ca.csv}{}% use head of csv as column names
-%     % {\\\hline\givenname\ \name & \matriculation}% specify your coloumns here
-%     \end{tabular}
 
 \section{Analysis based on the Model}
 % Analyze and interpret the results of your model to address the four states’
@@ -453,17 +408,17 @@ It is believed that in the future, the share of renewable energy in Texas will c
 \subsection{Construct the Criteria}
 % 引用文献阐明标准
 We divide the evaluation of the use of clean energy into two parts.
-One is the total amount of clean energy and renewable energy used in each state.
-Secondly, the efficiency of the usage of clean energy and renewable energy.
+One is the total amount of cleaner, renewable energy used in each state.
+Secondly, the efficiency of the usage of cleaner, renewable energy.
 By the country's leading energy agency, the loading order policy instructs California's energy sources to respond first to demand through efficiency and demand response,
 before considering a new generation.
 According to the first part, we use the ratio of renewable energy to total consumption, the ratio of renewable energy used in various industries,
 and the growth of renewable energy use. In the second part, we use the per capita energy consumption and energy intensity as a measure of energy efficiency.
 \subsection{Criteria Mathematical Expression}
 \begin{itemize}
-  \item The proportion of clean energy and renewable energy consumtion in the total energy consumtion
+  \item The proportion of cleaner, renewable energy consumption in the total energy consumption
         $$ CLREVT = ngVT + reVT + nuVT $$
-  \item The proportion of clean energy and renewable energy consumtion in four industries (Residential sector, transportation sector, Commercial sector and Industrial sector)
+  \item The proportion of cleaner, renewable energy consumption in four industries (Residential sector, transportation sector, Commercial sector and Industrial sector)
         $$ CLREVA = ngVA + reVA + nuVA$$
         $$ CLREVC = ngVC + reVC + nuVC$$
         $$ CLREVI = ngVI + reVI + nuVI$$
@@ -522,68 +477,69 @@ We found the population prediction of each states, which reference is listed in 
 But the GDP prediction doesn't have direct data. So we use the GDP Growth Forecast to calculate the GDP in 2025 and 2050 for each state, assuming their GDP growth is equal to US.
 Also assuming the prediction and the calculated data is the value of GDP and population in 2025 and 2050.
 \subsection{Predition}
-Using the data we collected, the prediction is as follows:
-%TODO: Insert the picture.
+Using the model trained before we predict the energy formala of 2025 and 2050.
+The prediction of 2025 is shows in Table \ref{tab:predict 2025}, and the prediction of 2050 is shows in Table \ref{tab:predict 2050}.
+
 \begin{table}[!htbp]
 \centering
-\caption{Forecast 2025}\label{tab:aStrangeTable}
+\caption{Forecast 2025}\label{tab:predict 2025}
 \begin{tabular}{ccccc}
 \toprule
 Variable& California& Arizona& New Mexico& Texas\\
 \midrule
-coalVT&	0.0045130156&	0.1763961309&	0.169297041&	0.2130591577 \\
-coalVA&	-0.000004245&	-8.06147048353619E-08&	0&	-5.33914224879455E-05\\
-coalVC&	0.0008346663&	0.0001074251&	0.0011010455&	0.001901673\\
-coalVI&	0.0191793852&	0.0921346145&	0.0073984873&	0.0219831338\\
-coalVR&	0.000084605&	1.78386896784993E-05&	0.0002231732&	0.0003992344\\
-ngVT&	0.1313055547&	0.0140126102&	0.1194374468&	-0.1391714556\\
-ngVA&	0.0041128053&	0.0248502609&	0.1639688911&	-0.0676301499\\
-ngVC&	0.1786989652&	0.0666360426&	0.2110454153&	0.0003785705\\
-ngVI&	0.2676615396&	0.0109624919&	0.348363306&	-0.2018176788\\
-ngVR&	0.3341802182&	0.0476394053&	0.3276451015&	-0.1489412044\\
-petroVT&	0.7280296922&	0.5921689547&	0.6597106994&	0.8755059729\\
-petroVA&	0.9897102523&	0.9721420506&	0.8304860818&	1.1096712563\\
-petroVC&	0.5561812268&	0.6297514699&	0.5461677769&	0.7038169322\\
-petroVI&	0.6159945193&	0.6647682217&	0.5560449702&	1.1162868422\\
-petroVR&	0.4191970817&	0.6112459226&	0.4457876754&	0.7399625015\\
-reVT&	0.1127594008&	0.1056959303&	0.0515542612&	0.0439832704\\
-reVA&	0.0061809178&	0.0030060891&	0.0055407405&	-0.0419872122\\
-reVC&	0.264284459&	0.3035030454&	0.241677205&	0.2939047459\\
-reVI&	0.097164183&	0.2321307086&	0.0881890599&	0.0635477261\\
-reVR&	0.246537405&	0.3410948631&	0.2263339065&	0.4085799568\\
-nuVT&	0.0233922776&	0.111726182&	0&	0.0066230661 \\
+coalVT&	0.0045156&	0.1763909&	0.169291&	0.2130591 \\
+coalVA&	-0.00000245&	-8.06148359E-08&	0&	-5.33914224E-05\\
+coalVC&	0.0008343&	0.0001051&	0.0011010&	0.001901\\
+coalVI&	0.0191752&	0.0921345&	0.0073973&	0.0219831\\
+coalVR&	0.000084605&	1.7838784993E-05&	0.0002231732&	0.0003992\\
+ngVT&	0.13130547&	0.0140122&	0.1194374&	-0.1391716\\
+ngVA&	0.004112803&	0.0248509&	0.1639681&	-0.067630\\
+ngVC&	0.178698965&	0.0666326&	0.2110453&	0.0003785\\
+ngVI&	0.267661536&	0.0109629&	0.348366&	-0.2018176\\
+ngVR&	0.334180282&	0.0476393&	0.3276415&	-0.1489412\\
+petroVT&	0.7280292&	0.5921547&	0.6597104&	0.8755059\\
+petroVA&	0.9897103&	0.9721406&	0.8304818&	1.1096712\\
+petroVC&	0.5561812&	0.6297519&	0.5461669&	0.7038169\\
+petroVI&	0.6159945&	0.6647617&	0.5560442&	1.1162868\\
+petroVR&	0.4191970&	0.6112426&	0.4457854&	0.7399625\\
+reVT&	0.1127594&	0.1056903&	0.0515542&	0.0439832\\
+reVA&	0.0061808&	0.0030091&	0.0055405&	-0.0419872\\
+reVC&	0.264284&	0.30350354&	0.241675&	0.2939047\\
+reVI&	0.097164&	0.2321306&	0.0881899&	0.0635477\\
+reVR&	0.246537&	0.3410931&	0.2263065&	0.4085799\\
+nuVT&	0.023392&	0.111782&	0&	0.0066261 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \begin{table}[!htbp]
 \centering
-\caption{Forecast 2050}\label{tab:aStrangeTable}
+\caption{Forecast 2050}\label{tab:predict 2050}
 \begin{tabular}{ccccc}
 \toprule
 Variable& California& Arizona& New Mexico& Texas\\
 \midrule
-coalVT	&	0.0044057668	&	0.1581883234	&	0.1688772331&	0.2130591673	\\
-coalVA	&	-3.2295295561E-06	&	-5.3943563074E-08	&	0	&	-5.33914224E-05	\\
-coalVC	&	0.000715508	&	9.02716285793421E-05	&	0.0010875846	&	0.001901673	\\
-coalVI	&	0.0188992449	&	0.0828377848	&	0.007372724	&	0.0219831338	\\
-coalVR	&	7.6279760665E-05	&	1.443782932E-05	&	0.0002197573	&	0.0003992344	\\
-ngVT	&	0.1326052795	&	0.0333880189	&	0.1198407186	&	-0.1391714556	\\
-ngVA	&	0.0042483122	&	0.030448991	&	0.1630049277	&	-0.0676301499	\\
-ngVC	&	0.1779199969	&	0.0817271991	&	0.2115935579	&	0.0003785705	\\
-ngVI	&	0.2746156784	&	0.0355198306	&	0.3496955613	&	-0.2018176788	\\
-ngVR	&	0.3388485753	&	0.0689002727	&	0.327655832	&	-0.1489412044	\\
-petroVT	&	0.7285410102	&	0.6039287042	&	0.6596493911	&	0.8755059729	\\
-petroVA	&	0.9880737508	&	0.9638037735	&	0.8314604726	&	1.1096712563	\\
-petroVC	&	0.5565722916	&	0.6190745572	&	0.5457112166	&	0.7038169322	\\
-petroVI	&	0.6094970796	&	0.665372954	&	0.5548986635	&	1.1162868422	\\
-petroVR	&	0.4187213581	&	0.5996497473	&	0.4457327915	&	0.7399625015	\\
-reVT	&	0.1118762929	&	0.103826076	&	0.051632124	&	0.0439832704	\\
-reVA	&	0.0076808957	&	0.0057454974	&	0.0055303084	&	-0.0419872122	\\
-reVC	&	0.2647915166	&	0.2991054419	&	0.2415990793	&	0.2939047459	\\
-reVI	&	0.0969876227	&	0.2162654208	&	0.0880288832	&	0.0635477261	\\
-reVR	&	0.2423530961	&	0.3314331349	&	0.2263814868	&	0.4085799568	\\
-nuVT	&	0.0225715699	&	0.1006686237	&	0	&	0.0066230661	\\
+coalVT	&	0.0044057	&	0.1581884	&	0.1688771&	0.2130573	\\
+coalVA	&	-3.2295291E-06	&	-5.3943564E-08	&	0	&	-5.339144E-05	\\
+coalVC	&	0.000715	&	9.02716283421E-05	&	0.0015846	&	0.001673	\\
+coalVI	&	0.0188999	&	0.0828848	&	0.007724	&	0.0219338	\\
+coalVR	&	7.6279760E-05	&	1.443782E-05	&	0.0002573	&	0.0003344	\\
+ngVT	&	0.1326052	&	0.0333880	&	0.1198407	&	-0.1391714	\\
+ngVA	&	0.0042483	&	0.030448	&	0.1630049	&	-0.0676301	\\
+ngVC	&	0.1779199	&	0.0817271	&	0.2115935	&	0.0003785	\\
+ngVI	&	0.2746156	&	0.0355198	&	0.3496955	&	-0.2018176	\\
+ngVR	&	0.3388485	&	0.0689002	&	0.327655	&	-0.1489412	\\
+petroVT	&	0.7285410	&	0.6039287	&	0.6596493	&	0.8755059	\\
+petroVA	&	0.9880737	&	0.9638037	&	0.8314604	&	1.1096712	\\
+petroVC	&	0.5565722	&	0.6190745	&	0.5457112	&	0.7038169	\\
+petroVI	&	0.6094970	&	0.665372	&	0.5548986	&	1.1162868	\\
+petroVR	&	0.4187213	&	0.5996497	&	0.4457327	&	0.7399625	\\
+reVT	&	0.1118762	&	0.103826	&	0.051632	&	0.0439832	\\
+reVA	&	0.0076808	&	0.0057454	&	0.0055303	&	-0.0419872	\\
+reVC	&	0.2647915	&	0.2991054	&	0.2415990	&	0.2939047	\\
+reVI	&	0.0969876	&	0.2162654	&	0.0880288	&	0.0635477	\\
+reVR	&	0.2423530	&	0.3314331	&	0.2263814	&	0.4085799	\\
+nuVT	&	0.0225715	&	0.1006686	&	0	&	0.0066230	\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -632,7 +588,7 @@ In the pre-development phase of the exchange of science and technology and the u
   \item Target 2050: Completely unsuitable for coal, doubling energy intensity compared to 2009,
   achieving over $50\%$ clean energy and becoming a major source of energy in a state.
 \end{itemize}
-\section{Propose measures}
+\section{Propose the measures}
 % Identify and discuss at least three actions the four states might take to meet their energy
 % compact goals.
 \begin{itemize}
@@ -665,7 +621,7 @@ In a broad sense, it does not matter if it is cut in or cut out, and hydrogen is
   % Mathematical Society and Addison-Wesley
   % Publishing Company , 1984-1986.
   \bibitem{1}\url{https://www.eia.gov/state/seds/seds-technical-notes-complete.php?sid=US#Consumption}
-  \bibitem{2} Joel Darmstadter  Energy and Population September 2004 Issue Brief 04–01
+  \bibitem{2} Joel Darmstadter    Energy and Population , September 2004
   \bibitem{3}\url{http://reliawiki.org/index.php/Multiple_Linear_Regression_Analysis}
   \bibitem{4}\url{https://en.wikipedia.org/wiki/Normalization_(statistics)}
   \bibitem{5}\url{https://en.wikipedia.org/wiki/Energy_intensity}

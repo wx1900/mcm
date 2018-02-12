@@ -8,39 +8,39 @@
 \contentsline {subsection}{\numberline {2.2}California' energy profile}{6}{subsection.2.2}
 \contentsline {subsubsection}{\numberline {2.2.1}Petroleum}{6}{subsubsection.2.2.1}
 \contentsline {subsubsection}{\numberline {2.2.2}Natural gas}{6}{subsubsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}Renewable energy}{6}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.3}Renewable energy}{7}{subsubsection.2.2.3}
 \contentsline {subsubsection}{\numberline {2.2.4}Coal}{7}{subsubsection.2.2.4}
 \contentsline {subsection}{\numberline {2.3}Arizona' energy profile}{7}{subsection.2.3}
 \contentsline {subsubsection}{\numberline {2.3.1}Petroleum}{7}{subsubsection.2.3.1}
 \contentsline {subsubsection}{\numberline {2.3.2}Natural gas}{8}{subsubsection.2.3.2}
 \contentsline {subsubsection}{\numberline {2.3.3}Renewable Energy}{8}{subsubsection.2.3.3}
 \contentsline {subsubsection}{\numberline {2.3.4}Coal}{8}{subsubsection.2.3.4}
-\contentsline {subsection}{\numberline {2.4}New Mexico's energy profile}{8}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.4}New Mexico' energy profile}{9}{subsection.2.4}
 \contentsline {subsubsection}{\numberline {2.4.1}Petroleum}{9}{subsubsection.2.4.1}
 \contentsline {subsubsection}{\numberline {2.4.2}Natural gas}{9}{subsubsection.2.4.2}
 \contentsline {subsubsection}{\numberline {2.4.3}Renewable energy}{9}{subsubsection.2.4.3}
-\contentsline {subsubsection}{\numberline {2.4.4}Coal}{9}{subsubsection.2.4.4}
-\contentsline {subsection}{\numberline {2.5}Texas's energy profile}{10}{subsection.2.5}
+\contentsline {subsubsection}{\numberline {2.4.4}Coal}{10}{subsubsection.2.4.4}
+\contentsline {subsection}{\numberline {2.5}Texas' energy profile}{10}{subsection.2.5}
 \contentsline {subsubsection}{\numberline {2.5.1}Petroleum}{10}{subsubsection.2.5.1}
-\contentsline {subsubsection}{\numberline {2.5.2}Natural gas}{10}{subsubsection.2.5.2}
+\contentsline {subsubsection}{\numberline {2.5.2}Natural gas}{11}{subsubsection.2.5.2}
 \contentsline {subsubsection}{\numberline {2.5.3}Renewable energy}{11}{subsubsection.2.5.3}
 \contentsline {subsubsection}{\numberline {2.5.4}Coal}{11}{subsubsection.2.5.4}
-\contentsline {section}{\numberline {3}Developing the Model}{11}{section.3}
-\contentsline {subsection}{\numberline {3.1}Assumption}{11}{subsection.3.1}
+\contentsline {section}{\numberline {3}Developing the Model}{12}{section.3}
+\contentsline {subsection}{\numberline {3.1}Assumption}{12}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Calculate the Model}{12}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}The Model Results}{12}{subsection.3.3}
-\contentsline {section}{\numberline {4}Analysis based on the Model}{12}{section.4}
-\contentsline {subsection}{\numberline {4.1}California}{12}{subsection.4.1}
+\contentsline {section}{\numberline {4}Analysis based on the Model}{13}{section.4}
+\contentsline {subsection}{\numberline {4.1}California}{13}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Arizona}{14}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}New Mexico}{14}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.3}New Mexico}{15}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}Texas}{15}{subsection.4.4}
 \contentsline {section}{\numberline {5}Criteria for the "best" profile}{16}{section.5}
 \contentsline {subsection}{\numberline {5.1}Construct the Criteria}{16}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Criteria Mathematical Expression}{16}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Evaluate the profiles by criteria }{17}{subsection.5.3}
-\contentsline {section}{\numberline {6}Predict with Model}{17}{section.6}
-\contentsline {subsection}{\numberline {6.1}Data collecting and preprocessing}{17}{subsection.6.1}
+\contentsline {subsection}{\numberline {5.3}Evaluate the profiles by criteria }{18}{subsection.5.3}
+\contentsline {section}{\numberline {6}Predict with Model}{18}{section.6}
+\contentsline {subsection}{\numberline {6.1}Data collecting and preprocessing}{18}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Predition}{18}{subsection.6.2}
 \contentsline {subsection}{\numberline {6.3}Prediction Analysis}{18}{subsection.6.3}
 \contentsline {section}{\numberline {7}Determine the targets}{20}{section.7}
-\contentsline {section}{\numberline {8}Propose measures}{20}{section.8}
+\contentsline {section}{\numberline {8}Propose the measures}{21}{section.8}
