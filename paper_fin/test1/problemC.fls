@@ -171,6 +171,15 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/csvsimple/csvsimple.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/csvsimple/csvsimple.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 INPUT /home/thea/all/python/mcm/paper_fin/test1/problemC.aux
 INPUT /home/thea/all/python/mcm/paper_fin/test1/problemC.aux
 OUTPUT /home/thea/all/python/mcm/paper_fin/test1/problemC.aux
@@ -274,7 +283,8 @@ INPUT /home/thea/all/python/mcm/paper_fin/test1/energyprofile_ca.png
 INPUT /home/thea/all/python/mcm/paper_fin/test1/energyprofile_az.png
 INPUT /home/thea/all/python/mcm/paper_fin/test1/energyprofile_nm.png
 INPUT /home/thea/all/python/mcm/paper_fin/test1/energyprofile_tx.png
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0800.tfm
+INPUT /home/thea/all/python/mcm/paper_fin/test1/CA_reVT.png
+INPUT /home/thea/all/python/mcm/paper_fin/test1/energy_2009.png
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt1200.tfm

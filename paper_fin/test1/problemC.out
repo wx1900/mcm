@@ -3,7 +3,7 @@
 \BOOKMARK [2][]{subsection.2.1}{Data\040analysis\040and\040preparation}{section.2}% 3
 \BOOKMARK [3][]{subsubsection.2.1.1}{Energy\040classification}{subsection.2.1}% 4
 \BOOKMARK [3][]{subsubsection.2.1.2}{Four\040kinds\040of\040industries}{subsection.2.1}% 5
-\BOOKMARK [3][]{subsubsection.2.1.3}{The\040calculation\040process}{subsection.2.1}% 6
+\BOOKMARK [3][]{subsubsection.2.1.3}{Formula\040calculation\040process}{subsection.2.1}% 6
 \BOOKMARK [3][]{subsubsection.2.1.4}{Formula\040for\040energy\040profile}{subsection.2.1}% 7
 \BOOKMARK [2][]{subsection.2.2}{California'\040energy\040profile}{section.2}% 8
 \BOOKMARK [3][]{subsubsection.2.2.1}{Petroleum}{subsection.2.2}% 9
@@ -40,10 +40,7 @@
 \BOOKMARK [2][]{subsection.5.3}{Evaluate\040the\040profiles\040by\040criteria\040}{section.5}% 40
 \BOOKMARK [1][]{section.6}{Predict\040with\040Model}{}% 41
 \BOOKMARK [2][]{subsection.6.1}{Data\040collecting\040and\040preprocessing}{section.6}% 42
-\BOOKMARK [2][]{subsection.6.2}{Predition\040progress}{section.6}% 43
+\BOOKMARK [2][]{subsection.6.2}{Predition}{section.6}% 43
 \BOOKMARK [2][]{subsection.6.3}{Prediction\040Analysis}{section.6}% 44
 \BOOKMARK [1][]{section.7}{Determine\040the\040targets}{}% 45
 \BOOKMARK [1][]{section.8}{Propose\040measures}{}% 46
-\BOOKMARK [1][]{section*.4}{Appendices}{}% 47
-\BOOKMARK [1][]{Appendix.a.A}{Appendix\040First\040appendix}{}% 48
-\BOOKMARK [1][]{Appendix.a.B}{Appendix\040Second\040appendix}{}% 49
