@@ -1,0 +1,18 @@
+# Fdb version 3
+["pdflatex"] 1518404117 "test1.tex" "/home/thea/mcm2018/mcm/test1/test1.pdf" "test1" 1518404117
+  "/etc/texmf/web2c/texmf.cnf" 1517561850 1101 af7716885e081ab43982cab7b4672c1a ""
+  "/home/thea/mcm2018/mcm/test1/test1.aux" 1518402810 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex" 1403829539 2725 fc34ef3ccb37ba15a640e8fca6190bca ""
+  "/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex" 1417732693 19231 26434a5656c684f5ffb1f26f98006baa ""
+  "/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex" 1403829539 7677 6f5ce7c1124cad7ec57d05b2562bd8fe ""
+  "/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1417732693 4962 9c1069474ff71dbc47d5006555e352d3 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1503343927 31343 93828589fb0cea665e553ee5a17ad2d4 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1503343927 31343 93828589fb0cea665e553ee5a17ad2d4 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1518403936 995497 b67050bb9a205f9bf48fb56b2e066ef9 ""
+  "etoolbox.sty" 0 -1 0 ""
+  "mcmthesis.cls" 1484500196 8945 a32b54c83ee3c9a9953d5add223f7ae6 ""
+  "test1.tex" 1518402764 77 49863de27b26d1bf15a76af71de9cbb1 ""
+  (generated)
+  "/home/thea/mcm2018/mcm/test1/test1.pdf"
+  "/home/thea/mcm2018/mcm/test1/test1.log"
+  "test1.log"

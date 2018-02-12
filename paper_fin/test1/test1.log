@@ -1,0 +1,45 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.12)  12 FEB 2018 10:55
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**test1.tex
+(/home/thea/mcm2018/mcm/test1/test1.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 12 language(s) loaded.
+(/home/thea/mcm2018/mcm/test1/mcmthesis.cls
+Document Class: mcmthesis 2017/01/01 v6.2.1 The Thesis Template Designed For MCM/ICM
+The Thesis Template Designed For MCM/ICM
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+ (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks14
+\XKV@tempa@toks=\toks15
+ (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count79
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+
+! LaTeX Error: File `etoolbox.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+/home/thea/mcm2018/mcm/test1/mcmthesis.cls:36: Emergency stop.
+<read *> 
+         
+l.36 \define@boolkey
+                    {MCM}[MCM@opt@]{CTeX}[false]{}^^M
+*** (cannot \read from terminal in nonstop modes)
+
+ 
+Here is how much of TeX's memory you used:
+ 232 strings out of 494497
+ 3512 string characters out of 6172400
+ 51677 words of memory out of 5000000
+ 3729 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 264 hyphenation exceptions out of 8191
+ 27i,0n,19p,199b,22s stack positions out of 5000i,500n,10000p,200000b,80000s
+/home/thea/mcm2018/mcm/test1/mcmthesis.cls:36:  ==> Fatal error occurred, no output PDF file produced!

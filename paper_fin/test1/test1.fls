@@ -1,0 +1,14 @@
+PWD /home/thea/mcm2018/mcm/test1
+INPUT /etc/texmf/web2c/texmf.cnf
+INPUT /usr/share/texmf/web2c/texmf.cnf
+INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT /home/thea/mcm2018/mcm/test1/test1.tex
+OUTPUT /home/thea/mcm2018/mcm/test1/test1.log
+INPUT /home/thea/mcm2018/mcm/test1/mcmthesis.cls
+INPUT /home/thea/mcm2018/mcm/test1/mcmthesis.cls
+INPUT /usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex
