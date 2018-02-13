@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.2.12)  13 FEB 2018 06:54
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.2.12)  13 FEB 2018 07:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -859,7 +859,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 623--624
 [][][]$\T1/cmtt/m/n/12 https : / / www . eia . gov / state / seds / seds-[]technical-[]notes-[]complete .
  []
 
-Missing character: There is no – in font ecrm1200!
 
 Underfull \hbox (badness 10000) in paragraph at lines 625--626
 [][][]$\T1/cmtt/m/n/12 http : / / reliawiki . org / index . php / Multiple _ Linear _ Regression _
@@ -887,7 +886,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  15301 strings out of 493638
  228651 string characters out of 6146796
- 358292 words of memory out of 5000000
+ 358316 words of memory out of 5000000
  18412 multiletter control sequences out of 15000+600000
  26223 words of font info for 62 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191

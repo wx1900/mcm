@@ -17,18 +17,18 @@
 \begin{document}
 % 摘要
 \begin{abstract}
-  Energy is a major issue in the world. Societies use energy for transportation, commercial, residential, industrial and domestic purpose.
+  Energy is crucial in the development of the national economy. Balancing the usage between renewable energy and nonrenewable energy therefore provides us with a goal of ensuring everyone has access to enough sustainable energy to maintain a high standard of living.
   In the United States, many aspects of energy policy are decentralized to the state level.
   In this paper, we propose an energy profiile for four states, California, Arizona, New Mexico and Texas. The Energy profile shows the annual energy consumption and structure.
-  In order to better describe the energy profile, we determine some metrics to represent the energy consumption and structure, which been formed into an formula.
+  In order to better describe the energy profile, we determine some metrics to represent the energy consumption and structure, which been formed into a formula.
   By analyzing each state's status and calculating each state's energy formula, we establish a complete energy profile for each state. To our best knowledge, the energy consumption is ralated to
-  GDP (Gross domestic product) , Population and Energy per unit of GDP. Therefore, we build a multiple linear regression model to evaluate the relationship of these variables.
+  GDP (Gross domestic product) , Population and Energy per unit of GDP. Therefore, we build a multiple linear regression model to depict the relationship of these variables.
   % We use $MBE$ (Mean absolute error regression loss) and $R^2\ (coefficient\ of\ determination)\ regression\ score\ function$ to evaluate the model.
   For the evaluation of the "best" profile for using cleaner, renewable energy, we propose a criteria. There are four metrics in this criteria. The first is the proportion of cleaner, renewable energy consumption in the total energy consumption.
-  The second is the proportion of cleaner, renewable energy consumption in four industries. The third metric is energy consumption per capita and the last one is energy intensity.
+  The second is the proportion of cleaner, renewable energy consumption in four industries (Residential sector, transportation sector, Commercial sector and Industrial sector). The third metric is energy consumption per capita and the last one is energy intensity.
   We use these metrics to calculate their scores and compare the scores to find the best one.
-  Next, we use the model to predict the energy profile in 2025 and 2050 for each state. After that we combine the prediction and criteria to form the targets for each state.
-  According to the targets, we propose five measures to help reach the targets.
+  Next, we use the model to predict the energy profile in 2025 and 2050 for each state. After that we combine the prediction and criteria to set the targets for each state.
+  According to the targets, we propose five measures to help these four states to meet the targets.
 % 用 \\ 换行
 % 关键
 \begin{keywords}
@@ -41,14 +41,14 @@ keyword1; keyword2
 \tableofcontents
 % 介绍 Introduction
 \section{Introduction}
-Energy is a major issue in the world. The current world environment calls for increasing the use of cleaner, renewable energy.
+Energy is crucial in the development of the national economy. Balancing the usage between renewable energy and nonrenewable energy therefore provides us with a goal of ensuring everyone has access to enough sustainable energy to maintain a high standard of living.
 Most new renewable energy capacity is installed in developing
 countries, and largely in China, the single largest developer of
 renewable power and heat over the past eight years. In 2016,
 renewable energy spread to a growing number of developing and
 emerging economies, some of which have become important
 markets.
-In this paper, In this paper, we propose an energy profiile for four states, California, Arizona, New Mexico and Texas. The Energy profile shows the annual energy consumption and structure.
+In this paper, we propose an energy profiile for four states, California, Arizona, New Mexico and Texas. The Energy profile shows the annual energy consumption and structure.
 A formula is bring forward to describe the energy profile. We determine the metrics to represent the energy consumption and structure and select related variables from the variable list to calculate the metrics.
 By analysing each state's status and the energy formula, we establish a complete energy profile for each state.
 To our best knowledge, the energy consumption is ralated to
@@ -144,7 +144,7 @@ $$
 * Note that Nuclear Electric Power doesn't have variables to represent the annual consumption in different sectors.
 But is still an important energy sources, so we keep it.
 
-\subsection{California' energy profile}
+\subsection{Energy profile for California}
 California is the nation's third-largest state，and also California is the most populated state in the nation. Its total energy demand is second only to Texas.
 California's extensive efforts to increase energy efficiency, along with the implementation of alternative technologies,
 has restrained growth in energy demand. California is also rich in energy resources.
@@ -187,7 +187,7 @@ California also leads the nation in electricity generation from solar, geotherma
   \caption{Energy consumption, Arizona}
   \end{minipage}
   \end{figure}
-\subsection{Arizona' energy profile}
+\subsection{Energy profile for Arizona}
 Arizona has few fossil fuel resources, but it does have abundant solar and geothermal energy potential. 
 Elevations in Arizona vary from peaks more than 12,000 feet high in the north to nearly sea level in the lower deserts to the southwest.
 And abundant sunshine gives the entire state some of the nation’s greatest solar power potential. 
@@ -217,7 +217,7 @@ The main energy source in Arizona is oil.
   Mesa field, one of the 30 largest coal mines in the country. Arizona started to use coal from the 1970s and quickly became a significant $12\%$ energy
   source in the 1980s. It began to slowly decline to $8\%$ (2009) in the early 1990's and remained stable. Industrial coal,
   which grew rapidly from the mid-1970s to the late 1980s, reached $20\%$ at one point and quickly dropped to $8\%$ in the early 1990s and remained stable．
-\subsection{New Mexico' energy profile}
+\subsection{Energy profile for New Mexico}
 New Mexico is with much land but few people. Although it is the fifth-largest state by area, it is the sixth-least densely populated.
 New Mexico is the nation's 7th largest net energy supply state, rich in fossil fuels, minerals and renewable energy resources.
 The oil and gas industry, contributes significantly to the state's gross domestic product (GDP),
@@ -262,7 +262,7 @@ New Mexico's energy consumption per dollar of GDP and energy consumption per cap
   \caption{Energy consumption, Texas}
   \end{minipage}
   \end{figure}
-\subsection{Texas' energy profile}
+\subsection{Energy profile for Texas}
 Texas, located in the south-central part of the United States, is the second largest in size in the United States.
 The Texas Almanac classifies the state into four regions: Gulf Coastal Plains, Interior Lowlands, Great Plains, and Basin and Range Province.
 he Texas climate varies significantly from east to west. Moist air from the Gulf of Mexico sweeps westward across the state, losing moisture as it goes.
@@ -621,7 +621,7 @@ In a broad sense, it does not matter if it is cut in or cut out, and hydrogen is
   % Mathematical Society and Addison-Wesley
   % Publishing Company , 1984-1986.
   \bibitem{1}\url{https://www.eia.gov/state/seds/seds-technical-notes-complete.php?sid=US#Consumption}
-  \bibitem{2} Joel Darmstadter    Energy and Population , September 2004
+  \bibitem{2} Joel Darmstadter,  Energy and Population , September 2004
   \bibitem{3}\url{http://reliawiki.org/index.php/Multiple_Linear_Regression_Analysis}
   \bibitem{4}\url{https://en.wikipedia.org/wiki/Normalization_(statistics)}
   \bibitem{5}\url{https://en.wikipedia.org/wiki/Energy_intensity}

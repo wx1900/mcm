@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1518476063 "problemC.tex" "/home/thea/all/python/mcm/paper_fin/test1/problemC.pdf" "problemC" 1518476064
+["pdflatex"] 1518479407 "problemC.tex" "/home/thea/all/python/mcm/paper_fin/test1/problemC.pdf" "problemC" 1518479409
   "/etc/texmf/web2c/texmf.cnf" 1518404701 1101 af7716885e081ab43982cab7b4672c1a ""
-  "/home/thea/all/python/mcm/paper_fin/test1/problemC.aux" 1518476064 7769 5d65d364fa97b59c8aa0707c541f5207 ""
+  "/home/thea/all/python/mcm/paper_fin/test1/problemC.aux" 1518479408 7781 366dd486b9fe7bc78b2f2b259d273113 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -150,10 +150,10 @@
   "energyprofile_nm.png" 1518398561 43536 9f78a378f96802f844960430af440def ""
   "energyprofile_tx.png" 1518398561 44028 e1b1f74d8cdfc7a144f925f5ff5b2084 ""
   "mcmthesis.cls" 1484500196 8945 a32b54c83ee3c9a9953d5add223f7ae6 ""
-  "problemC.aux" 1518476064 7769 5d65d364fa97b59c8aa0707c541f5207 ""
-  "problemC.out" 1518476064 3314 f81c5480dda4553a66371946cd39575e ""
-  "problemC.tex" 1518476059 50984 0d1bdc5c84f1e7461b772c037570bf4d ""
-  "problemC.toc" 1518476064 3921 f1dbd5530baf6d70e3413b5d72c0c730 ""
+  "problemC.aux" 1518479408 7781 366dd486b9fe7bc78b2f2b259d273113 ""
+  "problemC.out" 1518479408 3338 179ad6f3817e5b1cba0ceb777cd75f6f ""
+  "problemC.tex" 1518479326 51331 92de2417cbca593706e14c8edfed805f ""
+  "problemC.toc" 1518479408 3933 92b60ee04c0a20a36325baa3051c088e ""
   (generated)
   "problemC.aux"
   "problemC.toc"
